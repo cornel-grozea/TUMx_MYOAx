@@ -4,23 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chatter|app</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>chatter | app</h1>
-    <h2>Favorites</h2>
-    <p> <strong>MeetUp </strong><small>11:51</small><br>
-        <strong>OktobberFest </strong><small>10:51</small> 
-    </p>
-
-    <h2>Regular</h2>
-    <p> <strong>WeatherChanel </strong><small>Yesterday</small><br>
-        <strong>SevenContinents </strong><small>23 May 2018</small>
-    </p>
-    <section>
-        <h1>MeetUp</h1>
-        
+    <!-- Chanells section -->
+    <section id="channels-section">
+        <div class="headbar">
+            <h1> <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Logo" style="height: 56px;">chatter | app</h1>
+        </div>
+        <h2>Favorites</h2>
+        <ul class="channel-list">
+            <li class="selected"><span class="channel-name-class">MeetUp </span><span class="channel-time-class">11:51</span></li>
+            <li><span class="channel-name-class">OktoberFest </span><span class="channel-time-class">10:51</span></li>
+        </ul>
+         
+        <h2>Regular</h2>
+        <ul class="channel-list">
+            <li><span class="channel-name-class">WeatherChanel </span><span class="channel-time-class">Yesterday</span></li>
+            <li><span class="channel-name-class">SevenContinents </span><span class="channel-time-class">23 May 2018</span></li>
+        </ul>
     </section>
 
+    <!-- open chat section -->
+    <section id="chat-section">
+        <div class="headbar">
+            <h1>MeetUp</h1>
+            <button>Favorite</button>
+        </div>
+        
+        <div id="chat-area">
+            <div>
+                <div class="senderName incomingText textArea">
+                    <h2>Vasile Ion</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse asperiores ad cum ratione exercitationem, expedita voluptatibus tempora voluptatem dolorem cumque? Reprehenderit optio enim laudantium possimus quia ad ipsam a quae!</p>    
+                </div>
+                <small>11.41</small>
+            </div>
 
+            <div>
+                <div class="senderName incomingText textArea">
+                    <h2>Vasile Ion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis ipsa natus nemo, tempora laudantium ullam magnam maiores dolores corporis nobis officia numquam quaerat doloribus obcaecati accusantium quo assumenda. Expedita.</p>
+                </div>
+                <small>11.43</small>
+            </div>
+
+            <div>
+                <div class="outgoingText textArea">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, laborum. Quia totam mollitia ut sapiente culpa nisi asperiores, quasi ipsa magnam accusantium molestiae aliquid, sed quod in. Voluptatum, aperiam expedita.</p>
+                </div>
+                <small>11.45</small>
+            </div>
+            
+            <div>
+                <div class="senderName incomingText textArea">
+                    <h2>Vasile Ion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa tempora quis ex, distinctio illum nostrum ea. Eius molestias, eos aliquid ea fugiat illo neque ipsam. Perferendis non ea amet.</p>    
+                </div>
+                <small>11.53</small>
+            </div>
+        </div>
+
+        <!-- send your message input -->
+        <div>
+            <input type="text" id="sendTextInput" placeholder="Type your text here and hit Send">
+            <button>Send</button>
+        </div>
+    </section>
 </body>
 </html>

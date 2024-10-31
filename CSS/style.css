@@ -1,0 +1,88 @@
+/* Global */
+body {
+    font-family: "Roboto", "Arial", "sans-serif";
+    width: 100%;
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+section {
+    position: fixed;
+    height: 100vh;
+}
+h2, .channel-time-class {
+    font-size: smaller;
+}
+h1, h2 {
+    color: #00838f
+}
+
+/* App bar */
+.headbar{
+    background-color: #eeeeee;
+    height: 63px;
+    padding-left: 10px;
+}
+img {
+    background-color: #00838f;
+}
+
+/* Channels list */
+#channels-section {
+    width: 399px;
+    height: 100vh;
+    border-right: solid black 1px;
+}
+.selected {
+    background-color: #eeeeee;
+    border-right: solid 5px #00838f;
+}
+#channels-section h2 {
+    text-transform: uppercase;
+    font-weight:bolder ;
+    padding: 10px; 
+}
+.channel-list {
+    background-color: white;
+    list-style-type: none;
+}
+
+#channels-section li {
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+}
+
+/* Messages */
+#chat-section{
+    left: 400px;
+    width: calc(100% - 400px);
+}
+#chat-section h1 {
+    display: inline-block;
+}
+#chat-section div.headbar{
+    align-content: center ;
+}
+button {
+    background: #00838f;
+    text-transform: uppercase;
+    color: white;
+    font-size: larger;
+}
+#chat-area {
+    width: 75%;
+}
+#chat-area h2,  #chat-area p, #chat-area .textArea {
+    margin: 5px;
+    padding: 5px;
+}
+.outgoingText {
+    background: #00838f;
+    color: white
+}
+.incomingText {
+    background-color: #eeeeee;
+}
